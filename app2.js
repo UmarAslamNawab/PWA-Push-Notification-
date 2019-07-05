@@ -1,3 +1,6 @@
+//if we want to use the (res) out side of any function like in app.js 
+// we put this on a variable, now we can use it any where in the app
+
 let serviceWorkerRegister = async () => {
     const serviceWorker = await navigator.serviceWorker.register('service-worker.js')
     return serviceWorker

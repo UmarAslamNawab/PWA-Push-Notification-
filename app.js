@@ -1,4 +1,4 @@
-
+//this (res) onl works in this function, not out if this function 
 
 window.addEventListener('load', async e => {
     if ('serviceWorker' in navigator) {
@@ -18,7 +18,7 @@ window.addEventListener('load', async e => {
     }
 })
 
-
+]
 fetch('https://jsonplaceholder.typicode.com/todos')
     .then(response => response.json())
     .then(json => {
@@ -32,4 +32,4 @@ fetch('https://jsonplaceholder.typicode.com/todos')
             todo.appendChild(div);
         }
     })
-
+   
